@@ -1,0 +1,25 @@
+{
+  "name": "qm-relays-table",
+  "version": "1.0.0",
+  "description": "",
+  "main": "relays_table.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/modulesQuimera/qm-relays-table.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/modulesQuimera/qm-relays-table/issues"
+  },
+  "homepage": "https://github.com/modulesQuimera/qm-relays-table#readme",
+  "node-red" : {
+    "nodes": {
+        "relays_table": "relays_table.js"
+    }
+  }
+}

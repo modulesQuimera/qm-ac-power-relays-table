@@ -4,7 +4,7 @@
         color: '#FA8072',
         defaults: {
             name:{value: ""},
-            mapeamento: { value: "", type: "mapping-voltage" },
+            mapeamento: { value: "", type: "ac-power-mapping" },
             VA: { value : false },
             VB: { value : false },
             VC: { value : false },
@@ -23,7 +23,6 @@
             var self = this;
 
             var config_mapeamento = RED.nodes.node(this.mapeamento);
-            console.log(config_mapeamento)
             if (config_mapeamento) {
                 document.getElementById("VA").innerText = "VA - PIN - 3 " + config_mapeamento.connectorVA + " - " + config_mapeamento.labelVA; 
                 document.getElementById("VB").innerText = "VB - PIN - 2 " + config_mapeamento.connectorVB + " - " + config_mapeamento.labelVB; 

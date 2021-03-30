@@ -24,10 +24,10 @@
 
             var config_mapeamento = RED.nodes.node(this.mapeamento);
             if (config_mapeamento) {
-                document.getElementById("VA").innerText = "VA - PIN - 3 " + config_mapeamento.connectorVA + " - " + config_mapeamento.labelVA; 
-                document.getElementById("VB").innerText = "VB - PIN - 2 " + config_mapeamento.connectorVB + " - " + config_mapeamento.labelVB; 
-                document.getElementById("VC").innerText = "VC - PIN - 3 " + config_mapeamento.connectorVC + " - " + config_mapeamento.labelVC;
-                document.getElementById("VN").innerText = "VN - PIN - 2 " + config_mapeamento.connectorVN + " - " + config_mapeamento.labelVN;
+                document.getElementById("VA").innerText = `VA - PIN - 3 <br> ${config_mapeamento.connectorVA} - ${config_mapeamento.labelVA}`; 
+                document.getElementById("VB").innerText = `VB - PIN - 2 <br> ${config_mapeamento.connectorVB} - ${config_mapeamento.labelVB}`; 
+                document.getElementById("VC").innerText = `VC - PIN - 3 <br> ${config_mapeamento.connectorVC} - ${config_mapeamento.labelVC}`;
+                document.getElementById("VN").innerText = `VN - PIN - 2 <br> ${config_mapeamento.connectorVN} - ${config_mapeamento.labelVN}`;
                 document.getElementById("IA").innerHTML = `IA+ - PIN - 1 <br> ${config_mapeamento.connectorIAp} - ${config_mapeamento.labelIAp}`;
                 document.getElementById("IB").innerHTML = `IB+ - PIN - 1 <br> ${config_mapeamento.connectorIBp} - ${config_mapeamento.labelIBp}`;
                 document.getElementById("IC").innerHTML = `IC+ - PIN - 1 <br> ${config_mapeamento.connectorICp} - ${config_mapeamento.labelICp}`;

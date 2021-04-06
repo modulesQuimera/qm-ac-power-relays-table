@@ -24,21 +24,21 @@
 
             var config_mapeamento = RED.nodes.node(this.mapeamento);
             if (config_mapeamento) {
-                document.getElementById("VA").innerText = `VA - PIN - 3 <br> ${config_mapeamento.connectorVA} - ${config_mapeamento.labelVA}`; 
-                document.getElementById("VB").innerText = `VB - PIN - 2 <br> ${config_mapeamento.connectorVB} - ${config_mapeamento.labelVB}`; 
-                document.getElementById("VC").innerText = `VC - PIN - 3 <br> ${config_mapeamento.connectorVC} - ${config_mapeamento.labelVC}`;
-                document.getElementById("VN").innerText = `VN - PIN - 2 <br> ${config_mapeamento.connectorVN} - ${config_mapeamento.labelVN}`;
-                document.getElementById("IA").innerHTML = `IA+ - PIN - 1 <br> ${config_mapeamento.connectorIAp} - ${config_mapeamento.labelIAp}`;
-                document.getElementById("IB").innerHTML = `IB+ - PIN - 1 <br> ${config_mapeamento.connectorIBp} - ${config_mapeamento.labelIBp}`;
-                document.getElementById("IC").innerHTML = `IC+ - PIN - 1 <br> ${config_mapeamento.connectorICp} - ${config_mapeamento.labelICp}`;
+                document.getElementById("VN").innerHTML = `VN - PIN - 1 <br> ${config_mapeamento.connectorVN}`;
+                document.getElementById("VA").innerHTML = `VA - PIN - 2 <br> ${config_mapeamento.connectorVA}`; 
+                document.getElementById("VB").innerHTML = `VB - PIN - 3 <br> ${config_mapeamento.connectorVB}`; 
+                document.getElementById("VC").innerHTML = `VC - PIN - 4 <br> ${config_mapeamento.connectorVC}`;
+                document.getElementById("IA").innerHTML = `IA+ - PIN - 1 <br> ${config_mapeamento.connectorIAp}`;
+                document.getElementById("IB").innerHTML = `IB+ - PIN - 3 <br> ${config_mapeamento.connectorIBp}`;
+                document.getElementById("IC").innerHTML = `IC+ - PIN - 5 <br> ${config_mapeamento.connectorICp}`;
             }else {
-                document.getElementById("VA").innerText = "VA";
-                document.getElementById("VB").innerText = "VB";
-                document.getElementById("VC").innerText = "VC";
-                document.getElementById("VN").innerText = "VN";
-                document.getElementById("IA").innerText = "IA";
-                document.getElementById("IB").innerText = "IB";
-                document.getElementById("IC").innerText = "IC";
+                document.getElementById("VA").innerHTML = "VA";
+                document.getElementById("VB").innerHTML = "VB";
+                document.getElementById("VC").innerHTML = "VC";
+                document.getElementById("VN").innerHTML = "VN";
+                document.getElementById("IA").innerHTML = "IA";
+                document.getElementById("IB").innerHTML = "IB";
+                document.getElementById("IC").innerHTML = "IC";
             }
 
         },
@@ -64,7 +64,7 @@
     .check{ width: 20px !important; margin-top: 0px !important; margin-bottom: 3px; }
     .label-check{ width: 200px !important; margin: 0px !important; }
     .row { display: flex; flex-direction: row; align-items: center; }
-    .row label { margin: 0; margin-left: 5px;}
+    .row label { margin: 0; margin-left: 5px; text-align: center;}
     .form-row2 { display: flex; flex-direction: row; justify-content: space-between;}
     .box-style { background: #e0e0e0; padding: 18px; border-radius: 4px; box-shadow: 0px 0px 7px 0px #868686; }
     .container-tester { display: flex; min-width: 620px; width: 100%; flex-direction: column; }
@@ -96,25 +96,25 @@
                 <div class= "columm-25">
                     <div class="row">
                         <input class="check" type="checkbox" id="node-input-VA">
-                        <label id="VA" for="node-input-VA" style="max-width:100px;"> VA</label>
+                        <label id="VA" for="node-input-VA" style="max-width:100px; text-align: center;"> VA</label>
                     </div>
                 </div>
                 <div class= "columm-25">
                     <div class="row">
                         <input class="check" type="checkbox" id="node-input-VB">
-                        <label id="VB" for="node-input-VB" style="max-width:100px;"> VB</label>
+                        <label id="VB" for="node-input-VB" style="max-width:100px; text-align: center;"> VB</label>
                     </div>
                 </div>
                 <div class= "columm-25">
                     <div class="row">
                         <input class="check" type="checkbox" id="node-input-VC">
-                        <label id="VC" for="node-input-VC" style="max-width:100px;"> VC</label>
+                        <label id="VC" for="node-input-VC" style="max-width:100px; text-align: center;"> VC</label>
                     </div>
                 </div>
                 <div class= "columm-25">
                     <div class="row">
                         <input class="check" type="checkbox" id="node-input-VN">
-                        <label id="VN" for="node-input-VN" style="max-width:100px;"> VN</label>
+                        <label id="VN" for="node-input-VN" style="max-width:100px; text-align: center;"> VN</label>
                     </div>
                 </div>
             </div>
@@ -123,25 +123,25 @@
                 <div class= "columm-25">
                     <div class="row">
                         <input class="check" type="checkbox" id="node-input-IA">
-                        <label id="IA" for="node-input-IA" style="max-width:100px;"> IA</label>
+                        <label id="IA" for="node-input-IA" style="max-width:100px; text-align: center;"> IA</label>
                     </div>
                 </div>
                 <div class= "columm-25">
                     <div class="row">
                         <input class="check" type="checkbox" id="node-input-IB">
-                        <label id="IB" for="node-input-IB" style="max-width:100px;"> IB</label>
+                        <label id="IB" for="node-input-IB" style="max-width:100px; text-align: center;"> IB</label>
                     </div>
                 </div>
                 <div class= "columm-25">
                     <div class="row">
                         <input class="check" type="checkbox" id="node-input-IC">
-                        <label id="IC" for="node-input-IC" style="max-width:100px;"> IC</label>
+                        <label id="IC" for="node-input-IC" style="max-width:100px; text-align: center;"> IC</label>
                     </div>
                 </div>
                 <div class= "columm-25">
                     <div class="row">
                         <input class="check" type="checkbox" id="node-input-MASTER">
-                        <label for="node-input-MASTER" style="max-width:100px;"> MASTER</label>
+                        <label for="node-input-MASTER" style="max-width:100px; text-align: center;"> MASTER</label>
                     </div>
                 </div>
             </div>
